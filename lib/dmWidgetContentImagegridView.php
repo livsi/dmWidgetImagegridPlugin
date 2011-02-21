@@ -118,7 +118,7 @@ class dmWidgetContentImagegridView extends dmWidgetPluginView
 //      );
       $html .= $helper->tag('td.imagegrid width="'.intval(100/$columns).'%" valign="top"',$media['link']
         ? $helper->link($media['link'])->text($media['tag'])
-        :  $helper->link("media:".$media['id'])->text($media['tag'])._tag('div', $helper->link("media:".$media['id'])->text($media['alt']))
+        :  $helper->link("media:".$media['id'])->text($media['tag'])._tag('div.imagename', $helper->link("media:".$media['id'])->text($media['alt']))
         );
       if ( ($i) % $columns == 0) {$html .= $helper->close('tr');}
     }
