@@ -106,7 +106,7 @@ class dmWidgetContentImagegridView extends dmWidgetPluginView
     $columns = 4;
     $i=0;
 //    $html = $helper->open('ul.dm_widget_content_imagegrid.list');
-    $html = $helper->open('table');
+    $html = $helper->open('table cellpadding="0" cellspacing="0" width="100%"');
 
     foreach($vars['medias'] as $media)
     {
@@ -118,7 +118,7 @@ class dmWidgetContentImagegridView extends dmWidgetPluginView
 //      );
       $html .= $helper->tag('td.imagegrid width="'.intval(100/$columns).'%" valign="top"',$media['link']
         ? $helper->link($media['link'])->text($media['tag'])
-        :  $helper->link("media:".$media['id'])->text($media['tag'])._tag('div',$media['alt'])
+        :  $helper->link("media:".$media['id'])->text($media['tag'])._tag('div', $helper->link("media:".$media['id'])->text($media['alt']))
         );
       if ( ($i) % $columns == 0) {$html .= $helper->close('tr');}
     }
