@@ -1,0 +1,13 @@
+js:
+
+  dmWidgetImagegridPlugin:
+    
+    view:      view
+    form:      form
+
+css:
+
+  dmWidgetImagegridPlugin:
+    
+    view:      view
+    form:      form

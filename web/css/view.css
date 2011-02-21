@@ -1,0 +1,14 @@
+.dm_widget_content_imagegrid li.element {
+  display:block;
+  float: left;
+
+}
+.dm_widget_content_imagegrid li{
+  margin-left: 0 !important;
+}
+
+td.imagegrid {
+  border: 0 !important;
+  text-align: center;
+}
+
